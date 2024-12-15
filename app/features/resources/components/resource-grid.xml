@@ -1,0 +1,12 @@
+<GridLayout rows="auto, *" class="p-4">
+    <SearchBar hint="Buscar recursos..." text="{{ searchQuery }}" row="0" />
+    <ListView items="{{ filteredResources }}" row="1">
+        <ListView.itemTemplate>
+            <StackLayout class="card">
+                <Label text="{{ title }}" class="font-bold" />
+                <Label text="{{ type }}" class="text-gray-500" />
+                <Button text="Acessar" tap="{{ $parent.onResourceTap }}" class="primary-button" />
+            </StackLayout>
+        </ListView.itemTemplate>
+    </ListView>
+</GridLayout>

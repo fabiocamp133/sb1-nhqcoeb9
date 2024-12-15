@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.action-bar {
+  background-color: #6366f1;
+  color: white;
+}
+
+.primary-button {
+  background-color: #6366f1;
+  color: white;
+  padding: 12 24;
+  border-radius: 8;
+  margin: 8 0;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8;
+  padding: 16;
+  margin: 8;
+  elevation: 2;
+}

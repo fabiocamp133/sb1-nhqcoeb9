@@ -1,0 +1,14 @@
+<StackLayout>
+    <Label text="Suas Tarefas" class="title" />
+    <ListView items="{{ tasks }}">
+        <ListView.itemTemplate>
+            <StackLayout class="card">
+                <Label text="{{ title }}" class="font-bold" />
+                <Label text="{{ description }}" textWrap="true" class="text-gray-600" />
+                <Button text="{{ completed ? 'Concluída' : 'Concluir' }}" 
+                        tap="{{ $parent.onTaskComplete }}"
+                        class="{{ completed ? 'secondary-button' : 'primary-button' }}" />
+            </StackLayout>
+        </ListView.itemTemplate>
+    </ListView>
+</StackLayout>

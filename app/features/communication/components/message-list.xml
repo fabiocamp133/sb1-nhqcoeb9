@@ -1,0 +1,12 @@
+<StackLayout>
+    <Label text="Comunicação" class="title" />
+    <ListView items="{{ messages }}">
+        <ListView.itemTemplate>
+            <StackLayout class="card">
+                <Label text="{{ content }}" textWrap="true" />
+                <Label text="{{ timestamp }}" class="text-gray-500" />
+            </StackLayout>
+        </ListView.itemTemplate>
+    </ListView>
+    <Button text="Nova Mensagem" tap="{{ onNewMessage }}" class="primary-button" />
+</StackLayout>

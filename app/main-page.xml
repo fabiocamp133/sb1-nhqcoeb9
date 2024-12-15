@@ -1,0 +1,12 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+    <ActionBar title="Relação+Forte" class="action-bar" />
+    
+    <ScrollView>
+        <StackLayout class="p-4">
+            <include src="~/components/welcome-section.xml" />
+            <include src="~/components/quick-actions-grid.xml" />
+            <include src="~/components/daily-tip.xml" />
+            <include src="~/components/progress-card.xml" />
+        </StackLayout>
+    </ScrollView>
+</Page>
